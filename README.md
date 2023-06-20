@@ -1,10 +1,10 @@
 # nosql-social-network-18
 
-MongoDB & Mongoose practice
+MongoDB & Mongoose practice with Express.js
 
 ## Description
 
-Challenge 12: SQL Employee Tracker
+Challenge 18: NoSQL Challenge: Social Network API
 
 User Story
 
