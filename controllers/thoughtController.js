@@ -32,7 +32,10 @@ createThought(req, res) {
       if (!user) {
         res.status(404).json({ message: 'No user with that ID' });
       } else {
-        res.json({ message: 'Thought created!', thought: thought });
+        res.json({ 
+          message: 'Thought created!', 
+          thought: thought 
+          });
       }
     })
     .catch((err) => {
@@ -99,7 +102,9 @@ createThought(req, res) {
   removeReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
-      { $pull: { reactions: { _id: req.params.reactionId } } },
+      { $pull: 
+      { reactions: 
+        { _id: req.params.reactionId } } },
       { runValidators: true, new: true }
     )
       .then((thought) => {
